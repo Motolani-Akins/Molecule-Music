@@ -4,8 +4,8 @@ body{
     font-family: 'DM Sans', sans-serif;
     font-family: 'Roboto Slab', serif;
     color: #EEE8E8;
-    height: 100vh;
-    width: 100vw;
+    height: 800px;
+    width: 1400px;
 }
 
 /* -------------section 1-------------- */
@@ -80,16 +80,121 @@ hr{
 
 .play-controls{
     width: 160px;
-    margin-top: 116px;
+    margin-right: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+.playpause-track,
+.prev-track,
+.next-track {
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+  
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1.0;
+}
+
+.volume-and-action{
+    display: flex;
+    justify-content: space-between;
+}
+
 .action-icons{
     width: 160px;
-    margin-top: 82px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-right: 240px;
 }
+
+
+.slider_container {
+    width: 75%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #fff;
+    /* opacity: 0.7; */
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #f9bdc7;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 0.8;
+}
+  
+.seek_slider {
+  width: 100%;
+}
+  
+.volume_slider {
+  width: 60%;
+}
+  
+.current-time,
+.total-duration {
+  padding: 10px;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+  .container-2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 750px;
+  }
+
+  .volume-control{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      /* margin-left: 20%; */
+  }
+
+
+  .mini-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+
+  .title-and-action{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
