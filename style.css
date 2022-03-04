@@ -1,3 +1,5 @@
+ 
+
 body{
     background-color: #000;
     padding: 2% 8% 2% 8%;
@@ -7,26 +9,8 @@ body{
     height: 800px;
     width: 1400px;
 }
-
-/* -------------section 1-------------- */
-
-.top-ish{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 42px;
-}
-
-.img-container{
-    width: 580px;
-    height: 450px;
-    border: 1px solid #9F3F50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ----------- my fonts-------------- */
+/* -------------------Reusable elements------------- */
+/* ---------------My Fonts------------------------- */
 .emphasis{
     font-size: 20px;
     color: #fff;
@@ -39,11 +23,6 @@ body{
     font-weight: 400;
 }
 
-.regular-18{
-    font-weight: 400px;
-    font-size: 18px;
-    color: #EEE8E8;
-}
 
 .less-emphasis{
     font-size: 12px;
@@ -62,6 +41,31 @@ hr{
     height: 0.1px;
 }
 
+/* -------------section 1----Navigation-------------- */
+
+nav .top-ish{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.menu{
+    transition: 0.4s;
+}
+/* -------------section 2--styling album art and music section--------------------- */
+
+.album-art{
+    width: 580px;
+    height: 450px;
+    border: 1px solid #9F3F50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /* -------------Section 2---------------- */
 
 .img-and-songs{
@@ -77,6 +81,44 @@ hr{
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400px;
+    font-size: 18px;
+    color: #EEE8E8;
+}
+
+.music-icon{
+    display: none;
+}
+
+.music:hover > .icon-expand{
+    display: block;
+}
+
+/* .icon-expand{
+    margin-left: 60%;
+    transition: 0.4s;
+    opacity: 0;
+} */
+
+
+/* .music:hover > .icon-expand{
+    opacity: 1;
+} */
+
+/* .music:default > .icon-contract,
+.music:default > .icon-expand{
+    display: none;
+} */
+
+/* .music:hover > svg:active{
+    opacity: 1;
+}
+ */
 
 .play-controls{
     width: 160px;
@@ -111,6 +153,7 @@ hr{
     align-items: center;
     margin-right: 240px;
 }
+
 
 
 .slider_container {
@@ -184,6 +227,13 @@ hr{
       /* margin-left: 20%; */
   }
 
+  .vol-down{
+      margin-right: 10px;
+  }
+
+  .vol-up{
+      margin-left: 10px;
+  }
 
   .mini-container{
       display: flex;
