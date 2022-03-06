@@ -86,18 +86,32 @@ nav .top-ish{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 400px;
+}
+
+.song-text{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300px;
     font-size: 18px;
     color: #EEE8E8;
 }
 
-.music-icon{
-    display: none;
+
+.play-pause-icon{
+    margin-left: auto;
 }
 
-.music:hover > .icon-expand{
-    display: block;
-}
+/* .play-pause-icon{
+    display: none;
+} */
+
+/* .play-pause-icon:hover >  */
+
+/* .icon-expand{
+    display: inline-block;
+} */
+
+
 
 /* .icon-expand{
     margin-left: 60%;
