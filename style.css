@@ -77,7 +77,7 @@ nav .top-ish{
 
 .song-list{
     height: 450px;
-    margin-left: 80px;
+    margin-left: 100px;
     overflow-x: hidden;
     overflow-y: auto;
 }
